@@ -1,0 +1,158 @@
+body {
+    background-color: #632432;
+	font-family: Arial;
+}
+.contenedor {
+    position: absolute;
+    top: 7em;
+    left: 22em;
+}
+h1 {
+    position: absolute;
+    top: -2em;
+    left: 6.6em;
+    font: 2em sans-serif;
+    color: black;
+    padding: 0 1em;
+    border-left: 8px groove darkslategray;
+    background-color: darkgray;
+}
+.campos{
+    position: absolute;
+    padding: 1em 10em;
+    top: 25em;
+    left: 23.7em;
+    font: 1em sans-serif;
+    color: white;
+    background-color: darkred;
+
+}
+.exito{
+    position: absolute;
+    padding: 1em 10em;
+    top: 25em;
+    left: 25.7em;
+    font: 1em sans-serif;
+    color: white;
+    background-color: darkgreen;
+}
+.formulario{
+    padding: 3em 0 3em 3em;
+    border-radius: 15px;
+    border: 2px solid grey;
+    background-color: darkgray;
+}
+#email{
+    position: relative;
+    left: 5em;
+    top: -15px;
+}
+#pass{
+    position: relative;
+    left: -7.8em;
+    top: 15px;
+}
+#Ing{
+    position: relative;
+    left: 2.6em;
+    top: -15px;
+}
+#Cr{
+    position: relative;
+    left: -3em;
+    top: 17px;
+}
+.button{
+    background-color: dimgray;
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/*Main*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    list-style: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.nav > li {
+    position: absolute;
+    background-color: darkgrey;
+    border: groove black;
+    float:left;
+    left: 68em;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+.nav li a {
+    position: absolute;
+    background-color:#000;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+.nav li a:hover {
+    background-color:#434343;
+}
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+.nav li:hover > ul {
+    display:block;
+    left: -0.11em;
+    top: 2.4em;
+}
+.tema1{
+    position: absolute;
+    top: 2.7em;
+    left: 18.4em;
+    font: 1.8em sans-serif;
+    color: black;
+    padding-right: 2em;
+    padding-left: 2em;
+    background-color: darkgray;
+    border-left: 8px groove darkslategray;
+}
+.contenedor{
+	margin: 150px auto;
+	width: 600px;
+}
+
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color: #246355;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #369681;
+	color: white;
+}
