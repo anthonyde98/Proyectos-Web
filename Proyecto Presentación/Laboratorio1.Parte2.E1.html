@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mi Pagina Web</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src ="js/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			
+			$("#enlace").mouseover(function(){
+
+				$(this).css({"color":"red"});
+			});
+			$("#enlace").mouseout(function(){
+
+				$(this).css({"color":"blue"});
+			});
+			$("#Principal").mouseover(function(){
+				$(this).css({"background": "red", "color":"white"});
+			});
+			$("#Principal").mouseout(function(){
+
+				$(this).css({"background": "#fafafa", "color":"black"});
+			});
+			$("#datos").mouseover(function(){
+				$(this).css({"background": "#00FFFF", "color":"white"});
+			});
+			$("#datos").mouseout(function(){
+
+				$(this).css({"background": "#fafafa", "color":"black"});
+			});
+			$("#materias").mouseover(function(){
+				$(this).css({"background": "green", "color":"white"});
+			});
+			$("#materias").mouseout(function(){
+
+				$(this).css({"background": "#fafafa", "color":"black"});
+			});
+			$("#interes").mouseover(function(){
+				$(this).css({"background": "yellow", "color":"white"});
+			});
+			$("#interes").mouseout(function(){
+
+				$(this).css({"background": "#fafafa", "color":"black"});
+			});
+			$("#cursos").mouseover(function(){
+				$(this).css({"background": "purple", "color":"white"});
+			});
+			$("#cursos").mouseout(function(){
+
+				$(this).css({"background": "#fafafa", "color":"black"});
+			});
+			$("#otros").mouseover(function(){
+				$(this).css({"background": "pink", "color":"white"});
+			});
+			$("#otros").mouseout(function(){
+
+				$(this).css({"background": "#fafafa", "color":"black"});
+			});
+
+		});
+	</script>
+	<script type="text/javascript">
+		function Saludo(form)
+		{ 
+			var nombre = form.valor.value;
+			var saludo;
+			var fecha = new Date(); 
+	  		var hora = fecha.getHours();
+
+	  		if(hora >= 0 && hora < 12){
+			    texto = "Buenos Días";
+			  }
+	 
+			if(hora >= 12 && hora < 18){
+			    texto = "Buenas Tardes";
+			  }
+	 
+		    if(hora >= 18 && hora < 24){
+			    texto = "Buenas Noches";
+			  }
+
+	  		if(nombre == "")
+	  		{
+	  			alert("Escriba un nombre.");
+	  		}
+	  		else
+	  			alert( texto + " " + nombre);
+		} 
+
+		function Limpiar(){
+			document.getElementById("valor").value = "";
+		}
+	</script>
+</head>
+<body>
+	<h1 id = "Principal">Mi Pagina Web</h1>
+	<br><br>
+	<h2 id = "datos">Mis Datos Personales</h2>
+	<b>Nombre   : </b>Anthony Delanoy Peralta
+	<br>
+	<b>Cedula   : </b>402-3594100-8
+	<br>
+	<b>Matricula: </b>100430840
+	<br>
+	<b>Direccion: </b>Calle Desiderio Arias #94-A, Enriquillo de Herrera, Santo Domingo Oeste
+	<br><br>
+	
+	<img src="D:\Computadora Anthony 2 (Toshiba)\Plantillas\Anthony.jpg" WIDTH=260 HEIGHT=302>
+	<p>Soy un estudiante universitario de dos años que busca nuevas experiencias, mejorar mis habilidades de inglés y en informatica, y aprender sobre nuevas culturas.
+	<br>
+	Me gustan las computadoras y todo tipo de tecnologías.
+	</p>
+
+	<h2 id ="materias">Materias Actuales</h2>
+	<br>
+	<table border="1">
+		<tr>
+			<td>Materias</td>
+			<td>Creditos</td>
+			<td>Horario</td>
+			<td>Lugar</td>			
+			<td>Profesor/a</td>
+			<td>Metodo</td>
+		</tr>
+		<tr>
+			<td>Sistemas Operativos</td>
+			<td>4</td>
+			<td>7-9:50 AM M - 7-8:50 AM V </td>
+			<td>AB 210 - LIF 101</td>
+			<td>Radhames Silverio Gonzalez</td>
+			<td>Presencial</td>
+		</tr>
+		<tr>
+			<td>Base de Datos I</td>
+			<td>5</td>
+			<td>PA</td>
+			<td>PA</td>			
+			<td>Romery Alberto Monegro</td>
+			<td>Virtual</td>
+		</tr>
+		<tr>
+			<td>Lenguaje de Programacion III</td>
+			<td>4</td>
+			<td>3-6:50 PM J</td>
+			<td>ECS 403</td>			
+			<td>Angel Asencio M</td>
+			<td>Presencial</td>
+		</tr>
+		<tr>
+			<td>Lab Lenguaje de Programacion III</td>
+			<td>1</td>
+			<td>7-8:50 PM J</td>
+			<td>LIF 101 (Bani)</td>			
+			<td>Angel Asencio M</td>
+			<td>Presencial</td>
+		</tr>
+		<tr>
+			<td>Calculo II</td>
+			<td>5</td>
+			<td>10 AM-12:50 PM I-J </td>
+			<td>AB 205 - CM 206</td>			
+			<td>Juan Manzueta Concepcion</td>
+			<td>Presencial</td>
+		</tr>
+		<tr>
+			<td>Matematica Discreta para Computacion</td>
+			<td>4</td>
+			<td>4-5:50 PM L - 4-6:50 PM M</td>
+			<td>RN 018 - RL 106</td>			
+			<td>Juan Manzueta Concepcion</td>
+			<td>Presencial</td>
+		</tr>
+	</table>
+
+	<h2 id = "cursos">Cursos Realizados</h2>
+	<br>
+	<ol>
+		<li>Visual Basic (INFOTEP)</li>
+		<li>Manejo de Base de Datos (INFOTEP)</li>
+		<li>Lenjuaje de Programacion PHP (INFOTEP)</li>
+		<li>Diseño de Pagina WEB (INFOTEP)</li>
+		<li>Programa Ingles Por Inmersion (Dominico Americano)</li>
+	</ol>
+	<h2 id = "interes">Intereses</h2>
+	<br>
+	<ul class = "principal">
+		<li>Libros</li>
+		<ul>
+			<li>Sherlock Holmes</li>
+			<li>La Maquina del Tiempo</li>
+		</ul>
+		<li>Juegos</li>
+		<ul>
+			<li>WatchDogs</li>
+			<li>Call Of Duty</li>
+			<li>Need For Speed</li>
+		</ul>
+		<li>Series</li>
+		<ul>
+			<li>The Flash</li>
+			<li>Dark</li>
+			<li>Elementary</li>
+		</ul>
+		<li>Peliculas</li>
+		<ul>
+			<li>Infinity War</li>
+			<li>Justice League</li>
+			<li>Interestelar</li>
+		</ul>
+		<li>Programar</li>
+		<ul>
+			<li>C++</li>
+			<li>C#</li>
+			<li>Java</li>
+			<li>SQL</li>
+		</ul>
+		<li>Mujeres</li>
+	</ul>
+
+	<h2 id = "otros">Otros</h2>
+
+	<b>Un pequeño video que muestra imagenes del universo.</b>
+	<br><br>
+	<div>
+	<embed src="Imagenes Del Universo en HD.mp4" height="300"></embed>
+	</div>
+    <br><br>
+	<a href="file:///D:/Computadora%20Anthony%202%20(Toshiba)/Universidad/Informatica/Lab.%20Lenguaje%20de%20Programaci%C3%B3n%203/Lab%201/Laboratorio1.Parte1.E3.html" id = "enlace">Mi Otra Pagina.</a>
+	<br><br><br><br>
+	<form class = "form">
+	<b>Realizar un saludo</b>
+	<br><br>
+	<input type="text" id = "valor" name="valor" placeholder="Nombre del visitante" required><br><br>
+	<input type="button" value=" Saludo " onClick="Saludo(this.form)">
+	<input type="button" value=" Limpiar " onClick="Limpiar()">
+	</form>
+</body>
+</html>
